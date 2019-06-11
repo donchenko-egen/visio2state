@@ -20,29 +20,38 @@
 
 Подключение автомата в проект STM32:
 
-// внутри main()
-
  fsa_init(); // All automate init 
- // USER CODE END 2 // 
- // Infinite loop //
- // USER CODE BEGIN WHILE //
+ 
+ // USER CODE END 2  
+ 
+ // Infinite loop 
+ 
+ // USER CODE BEGIN WHILE 
+ 
   while (1)
+  
   {
-		fsa();  // Cистемный автомат
-    // USER CODE END WHILE //
+  
+    fsa();  // Cистемный автомат
+    
+    // USER CODE END WHILE 
 
-    // USER CODE BEGIN 3 //
+    // USER CODE BEGIN 3 
+    
   }
 
 Для работы WAIT необходимо
 
 void SysTick_Handler(void)
+
 {
-  // USER CODE BEGIN SysTick_IRQn 0 //
+
+  // USER CODE BEGIN SysTick_IRQn 0 
   
   SW_Systick();
   
-  // USER CODE END SysTick_IRQn 0 //
+  // USER CODE END SysTick_IRQn 0 
+  
 ....
 
 Создание собственного автомата. 
